@@ -1,0 +1,406 @@
+/* Hero section */
+
+.heroContainer {
+  position: relative;
+}
+
+.hero {
+  width: 100%;
+  display: grid;
+  text-align: center;
+  place-content: center;
+  height: calc(100vh - 79px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+      117.12deg,
+      rgba(97, 22, 22, 0.65) 28.17%,
+      rgba(32, 25, 25, 0.65) 67.28%,
+      rgba(97, 22, 22, 0.5785) 89.41%
+    ),
+    url("/assets/svg/hero.svg");
+}
+
+.heroSmall {
+  color: #fff;
+  font-weight: 600;
+  font-size: 36px;
+  margin: 0;
+}
+
+.heroBig {
+  color: #fff;
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 68px;
+}
+
+.heroBottom {
+  position: absolute;
+  background: #fff;
+  width: 95%;
+  left: 50%;
+  right: 50%;
+  bottom: -300px;
+  height: 363px;
+  padding-left: 29%;
+  padding-top: 40px;
+  transform: translateX(-50%);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.bottomContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bottomContent h4 {
+  color: #1e1e1e;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.bottomContent p {
+  color: #1e1e1e;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.pstImg {
+  position: absolute;
+  left: 0;
+  top: -120px;
+}
+
+.playImg {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+
+.bottomText {
+  display: grid;
+  /* row-gap: 1rem; */
+}
+
+.bottomText h4,
+.bottomText p {
+  margin: 0;
+}
+
+/* Vision Section */
+
+.visionSection {
+  margin-top: 370px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.vision {
+  display: flex;
+  gap: 4rem;
+}
+
+.mission {
+  display: flex;
+  gap: 4rem;
+  flex-direction: row-reverse;
+}
+
+.vision h4,
+.mission h4 {
+  margin: 20px 0;
+  color: #201919;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.vision p,
+.mission p {
+  color: #201919;
+  line-height: 62px !important;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.articleRight,
+.articleLeft {
+  flex: 1;
+}
+
+.flex {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Ministry Section */
+
+.minstryWrapper {
+  background: #f8f7f7;
+  padding: 4rem 0;
+  margin-top: 80px;
+}
+
+.ministryContainer {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.ministryHeading {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+}
+
+.ministryBodyWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.ministryHeadingText {
+  margin: 10px 0 20px 0;
+  font-weight: 700;
+  font-size: 48px;
+  color: #201919;
+}
+
+.ministryHeadingParag {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 62px !important;
+}
+
+.ministryBody_1,
+.ministryBody_2,
+.ministryBody_3 {
+  display: flex;
+  gap: 4rem;
+}
+
+.ministryBody_2 {
+  flex-direction: row-reverse;
+}
+
+/*Books section*/
+
+.bookWrapper {
+  background-color: #f5e3e9;
+  padding: 4rem 10px 14rem 10px;
+}
+
+.bookHeading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: #201919;
+}
+
+.bookParag {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
+  color: #201919;
+}
+
+/* Donate section */
+
+.donateWrapper {
+  display: grid;
+  margin-top: 200px;
+  position: relative;
+  place-content: center;
+  padding: 0px 10px 30px 10px;
+}
+
+.donateTop {
+  position: absolute;
+  width: 90%;
+  top: -300px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  background-image: url("/assets/svg/rect.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.donateTop h2 {
+  font-weight: 700;
+  font-size: 48px;
+  color: #fff;
+  padding-left: 60px;
+}
+
+.donateTop p {
+  font-weight: 400;
+  font-size: 24px;
+  color: #201919;
+}
+
+.donateBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.donateSocial {
+  display: grid;
+  column-gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.donateSocial h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: #201919;
+}
+
+.donateSocial a {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.donateSocial p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+
+@media (max-width: 992px) {
+  /* hero section */
+  .heroSmall {
+    font-size: 28px;
+  }
+
+  .heroBig {
+    font-size: 32px;
+  }
+
+  .heroBottom {
+    height: fit-content;
+    text-align: center;
+    padding: 10px;
+    width: 98%;
+    bottom: -500px;
+  }
+
+  .pstImg {
+    position: static;
+  }
+
+  .playImg {
+    display: none;
+  }
+
+  .bottomContent {
+    align-items: center;
+  }
+
+  .bottomContent h4 {
+    font-size: 28px;
+  }
+
+  .bottomContent p {
+    font-size: 18px;
+  }
+
+  /* vision section */
+
+  .visionSection {
+    margin-top: 40rem;
+    padding: 0 10px;
+  }
+
+  .vision,
+  .mission {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .img {
+    width: 400px;
+    height: auto;
+  }
+
+  .vision h4,
+  .mission h4 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .vision p,
+  .mission p {
+    font-size: 18px;
+  }
+
+  /* ministry section */
+  .ministryHeadingText {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .ministryHeadingParag {
+    font-size: 18px;
+  }
+
+  .ministryBody_1,
+  .ministryBody_2,
+  .ministryBody_3 {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  /* donate section */
+  .donateTop {
+    background-color: #bc466d;
+    flex-direction: column;
+    align-items: center;
+  }
+  .donateTop h2 {
+    font-size: 32px;
+    padding-left: 0px;
+    margin: 0;
+  }
+
+  .donateTop p {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .donateBottom {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    place-content: baseline;
+    padding-top: 8rem;
+  }
+  .donateSocial {
+    grid-template-columns: 1fr;
+  }
+}

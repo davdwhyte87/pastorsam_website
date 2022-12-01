@@ -1,0 +1,67 @@
+.donateWrapper {
+  margin-bottom: 0;
+  height: 120vh;
+  background-image: url("/assets/svg/candle.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.donateBody {
+  position: absolute;
+  padding: 0 3rem;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.donateWrapper {
+  height: 100vh;
+}
+
+.donateCard {
+  margin-top: 5rem;
+  padding: 12px 8rem;
+  display: grid;
+  place-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+}
+
+.donateBody h1 {
+  font-size: 48px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
+
+.donateBody p {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 700;
+  color: #201919;
+}
+
+@media (max-width: 800px) {
+  .donateCard {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .donateBody {
+    justify-content: space-evenly;
+  }
+
+  .donateBody h1 {
+    font-size: 24px;
+  }
+
+  .donateBody p {
+    font-size: 18px;
+  }
+}

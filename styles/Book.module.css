@@ -1,0 +1,93 @@
+.bookWrapper {
+  background: rgba(188, 70, 109, 0.15);
+  margin-bottom: 0;
+}
+
+.imgWrapper {
+  position: relative;
+  background-image: url("/assets/png/curl.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 410px;
+  margin-bottom: 0;
+}
+
+.imgWrapper h1 {
+  font-weight: 500;
+  font-size: 100px;
+  color: #fff;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gridWrapper {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-bottom: 7rem;
+}
+
+.gridWrapper h1 {
+  color: #201919;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.gridWrapper p {
+  font-weight: 400;
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+}
+
+.gridBody {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  row-gap: 6rem;
+  column-gap: 12px;
+}
+
+.gridItem {
+  display: grid;
+}
+
+.gridItem p {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: left;
+  margin: 0;
+}
+
+@media (max-width: 1150px) {
+  .imgWrapper h1 {
+    font-size: 48px;
+    top: 20%;
+  }
+}
+
+@media (max-width: 800px) {
+  .imgWrapper h1 {
+    font-size: 40px;
+    text-align: center;
+    top: 10%;
+  }
+
+  .gridWrapper h1 {
+    font-size: 24px;
+  }
+
+  .gridWrapper p {
+    font-size: 20px;
+  }
+
+  .gridItem {
+    place-content: center;
+  }
+}

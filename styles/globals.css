@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;500;600;700&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inknut Antiqua", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.imgWrap {
+  position: relative;
+}
+
+button.slick-next:before {
+  content: url("/assets/svg/arrowRight.svg");
+}
+button.slick-prev:before {
+  content: url("/assets/svg/arrowLeft.svg");
+}
+
+.slick-slide > div {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.slick-list {
+  overflow: hidden;
+}
+
+.show {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .show {
+    display: none;
+  }
+}
