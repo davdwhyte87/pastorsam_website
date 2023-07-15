@@ -15,7 +15,7 @@ const Hero: FC = () => {
       </header>
       <div className={styles.heroBottom}>
         <Image
-          src={"/assets/jpeg/sam.jpeg"}
+          src={"/assets/jpeg/minister.jpeg"}
           alt={"Preacher image"}
           width={356}
           height={353}
