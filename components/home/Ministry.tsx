@@ -56,7 +56,7 @@ const Ministry = (): JSX.Element => {
           </article>
           <article className={styles.ministryBody_3}>
             <Image
-              src={"/assets/svg/altar.svg"}
+              src={"/assets/jpeg/sam.jpeg"}
               width={645}
               height={650}
               alt="pst at the altar preaching"
